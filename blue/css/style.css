@@ -1,0 +1,60 @@
+body {
+	text-align: center;
+}
+
+/* QUESTION PART */
+
+#pick-one {
+	width: 50%;
+	padding: 20px 0 20px 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#pick-one button {
+	width: 30%;
+	display: inline-block;
+	margin: 0 0 0 0;
+	color: white;
+}
+
+#pick-red {
+	background-color: red;
+}
+
+#pick-blue {
+	background-color: blue;
+}
+
+/* SIDES */
+
+#two-sides {
+	overflow: hidden;
+}
+
+.one-side {
+	float:left; 
+	width:50%;
+	padding-bottom: 30px;
+	text-align: center;
+	background-color: grey;
+}
+
+/* VIDEOS */
+
+video {
+	background-color: #ddd;
+	border-radius: 7px;
+	width: 480px;
+	height: 360px;
+	display: block;
+	margin: 30px auto;
+}
+
+/* BUTTONS */
+
+button {
+	border-radius: 7px;  
+	width: 30%;
+	color: white;
+}

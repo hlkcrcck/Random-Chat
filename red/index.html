@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+	<title> Side by Side -- WebRTC </title>
+
+    <meta charset="utf-8">
+
+    <link rel="shortcut icon" type="image/png" href="img/icon.png"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+  </head>
+
+  <body>
+
+	<div id="pick-one">
+		<p>Which side?</p>
+		<button id="pick-red" type="button" class="btn">Red</button>
+		<button id="pick-blue" type="button" class="btn">Blue</button>
+	</div>
+
+	<div id="two-sides">
+		<div class="one-side" id="my-side">
+			<video id="my-video" autoplay></video>
+			<button id="my-button" type="button" onclick="joinLeave()" class="btn btn-lg">Join</button>
+		</div>
+
+		<div class="one-side" id="your-side">
+			<video id="your-video" autoplay></video>
+			<button id="your-button" type="button" onclick="callHangup()" class="btn btn-lg">Call</button>
+		</div>
+	</div>
+
+	<script src="js/firebase_config.js"></script>
+	<script src="js/script.js"></script>
+  </body>
+</html>
